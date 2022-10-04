@@ -21,3 +21,8 @@ h1{
     min-height: 100vh;
     padding: 10px;
 }
+
+#frame{
+    width: 500px;
+    height: 500px;
+}
