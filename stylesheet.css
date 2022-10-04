@@ -1,0 +1,23 @@
+*{
+    font-family: Arial;
+}
+h1{
+    text-align: center;
+}
+.flex-container{
+    display: flex;
+    width: 100%;
+    padding: 0;
+}
+.column1 {
+    background-color: aqua;
+    flex: 60%;
+    min-height: 100vh;
+    padding: 10px;
+}
+.column2 {
+    background-color: rgb(81, 38, 198);
+    flex: 40%;
+    min-height: 100vh;
+    padding: 10px;
+}
