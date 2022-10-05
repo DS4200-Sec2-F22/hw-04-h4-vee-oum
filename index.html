@@ -13,12 +13,19 @@
 <header><h1>hw-04: Event Handling</h1></header>
 <div class="flex-container">
     <div class="column1">
-        
+        <svg id="frame">
+            <!--need to figure out numbers frame is 500px 500px-->
+            <line id="xaxis" x1="" y1="" x2="" y2=""/>
+            <line id="yaxis" x1="" y1="" x2="" y2=""/>
+            <circle class="circle" id="circle1" cx="55" cy="60" r="50"/>
+            <circle class="circle" id="circle2" cx="" cy="" r=""/>
+            <circle class="circle" id="circle3" cx="" cy="" r=""/>
+            <circle class="circle"id="circle4" cx="" cy="" r=""/>
+        </svg>
          
     </div>
     <div class="column2">
-        <p>Last point clicked:</p>
-        <p>Coordinate</p>
+        <p id="clicked_coordinates"></p>
         <p>Select the x coordinate for the point you want to add. 
             <select name="Values" id="x_values">
                 <option value="1">1</option>
