@@ -15,19 +15,19 @@
     <div class="column1">
         <svg id="frame">
             <!--need to figure out numbers frame is 500px 500px-->
-            <line id="xaxis" x1="" y1="" x2="" y2=""/>
-            <line id="yaxis" x1="" y1="" x2="" y2=""/>
-            <circle class="circle" id="circle1" cx="55" cy="60" r="50"/>
-            <circle class="circle" id="circle2" cx="" cy="" r=""/>
-            <circle class="circle" id="circle3" cx="" cy="" r=""/>
-            <circle class="circle"id="circle4" cx="" cy="" r=""/>
+            <line id="xaxis" x1="50" y1="440" x2="440" y2="440"/>
+            <line id="yaxis" x1="50" y1="440" x2="50" y2="50"/>
+            <circle id="(1,2)" cx="90" cy="360" r="10"/>
+            <circle id="(2,4)" cx="130" cy="280" r="10"/>
+            <circle id="(6,2)" cx="290" cy="360" r="10"/>
+            <circle id="(9,9)" cx="410" cy="90" r="10"/>
         </svg>
          
     </div>
     <div class="column2">
         <p id="clicked_coordinates"></p>
         <p>Select the x coordinate for the point you want to add. 
-            <select name="Values" id="x_values">
+            <select name="xValues" id="x_values">
                 <option value="1">1</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
@@ -40,7 +40,7 @@
             </select> 
     </p>
         <p>Select the y coordinate for the point you want to add: 
-            <select name="Values" id="y_values">
+            <select name="yValues" id="y_values">
                 <option value="1">1</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
@@ -52,7 +52,7 @@
                 <option value="9">9</option>
             </select> 
         </p>
-        <button type="button" onclick="Adddpoint()">Add Point</button>
+        <button type="button" id="buttonPoint" onclick="Addpoint()">Add Point</button>
     </div>
 </div>
 <script src="program.js"></script>
