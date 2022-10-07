@@ -39,6 +39,6 @@ circle{
 }
 
 #xaxis, #yaxis {
-	stroke: black;
-	stroke-width: 5;
+    stroke: black;
+    stroke-width: 5;
 }

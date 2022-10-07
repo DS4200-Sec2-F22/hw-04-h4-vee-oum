@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html> 
-
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" charset=utf-8/>
+    <!--  link to the style sheet -->
     <link rel="stylesheet" type="text/css" href="stylesheet.css" media="screen"/>
     <!-- add title to page -->
     <title>hw-04</title>
@@ -10,22 +9,26 @@
 
 
 <body>
+    <!--  title of the webpage -->
 <header><h1>hw-04: Event Handling</h1></header>
 <div class="flex-container">
+    <!--  the column containing the interactive scatterplot -->
     <div class="column1">
+        <!--  the graph using scalable vector graphics -->
         <svg id="frame">
-            <!--need to figure out numbers frame is 500px 500px-->
-            <line id="xaxis" x1="50" y1="440" x2="440" y2="440"/>
-            <line id="yaxis" x1="50" y1="440" x2="50" y2="50"/>
-            <circle id="(1,2)" cx="90" cy="360" r="10"/>
-            <circle id="(2,4)" cx="130" cy="280" r="10"/>
-            <circle id="(6,2)" cx="290" cy="360" r="10"/>
-            <circle id="(9,9)" cx="410" cy="90" r="10"/>
+            <line id="xaxis" x1="1" y1="500" x2="500" y2="500"/>
+            <line id="yaxis" x1="1" y1="1" x2="1" y2="500"/>
+            <circle id="(1,2)" cx="50" cy="400" r="10"/>
+            <circle id="(2,4)" cx="100" cy="300" r="10"/>
+            <circle id="(6,2)" cx="300" cy="400" r="10"/>
+            <circle id="(9,9)" cx="450" cy="50" r="10"/>
         </svg>
          
     </div>
     <div class="column2">
+        <!--  the column which handles user inputs and displays the points that selected -->
         <p id="clicked_coordinates"></p>
+        <!--  user selects x coordinates from this menu -->
         <p>Select the x coordinate for the point you want to add. 
             <select name="xValues" id="x_values">
                 <option value="1">1</option>
@@ -40,6 +43,7 @@
             </select> 
     </p>
         <p>Select the y coordinate for the point you want to add: 
+            <!--  users selects y coordinates from this menu -->
             <select name="yValues" id="y_values">
                 <option value="1">1</option>
                 <option value="2">2</option>
@@ -55,11 +59,18 @@
         <button type="button" id="buttonPoint" onclick="Addpoint()">Add Point</button>
     </div>
 </div>
+<!-- connects the html file to the javascript file  -->
 <script src="program.js"></script>
+<!-- all the resources that were sued in this assignmenmts  -->
 <header><h1>Acknowledgements</h1></header>
 <div>
     <ul>
         <li> <a href="https://www.designcise.com/web/tutorial/how-to-create-an-input-with-dropdown-using-html-only#:~:text=To%20create%20an%20input%20field%20that%20has%20a,that%20matches%20the%20id%20of%20the%20%3Cdatalist%3E%20element." target="_blank">Resource 1</a></li>
+        <li> <a href="https://www.w3schools.com/csS/css3_flexbox.asp" target="_blank">Resource 2</a></li>
+        <li> <a href="https://thewebdev.info/2022/01/15/how-to-check-classlist-with-contains-if-a-class-exists-before-add-or-remove-with-javascript/#:~:text=To%20check%20classList%20with%20contains%20if%20a%20class,element%20%3D%20document.querySelector%20%28%27p%27%29%20element.classList.remove%20%28%27info%27%29%3B%20element.classList.add%20%28%27hint%27%29%3B" target="_blank">Resource 3</a></li>
+        <li> <a href="https://www.w3schools.com/jsref/prop_select_selectedindex.asp" target="_blank">Resource 4</a></li>
+        <li> <a href="https://careerkarma.com/blog/javascript-innertext-innerhtml/#:~:text=The%20JavaScript%20innerHTML%20property%20sets%20the%20HTML%20contents,innerHTML%20like%20so%3A%20document.getElementById%20%28%E2%80%9Cparagraph%E2%80%9D%29.innerHTML%20%3D%20%E2%80%9CCareer%20Karma%21%E2%80%9D%3B" target="_blank">Resource 5</a></li>
+
     </ul>
 </div>
 <div>
